@@ -1,0 +1,75 @@
+
+body {
+    min-height: 100%;
+    background: url("../images/Chalkboard-books-and-apple.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game-container {
+    float: left;
+    position: relative;
+    padding-top: 80px;
+    padding-left: 12%;
+    padding-right: 10%;
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+#true {
+    padding: 10px;
+    margin: 10px;
+    font-size: 22px;
+    color: rgb(8, 8, 8);
+    background-color: rgb(128, 241, 105);
+    opacity: .9;
+}
+#true:hover {
+    font-size: 24px;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+#false {
+    padding: 10px;
+    margin: 10px;
+    font-size: 22px;
+    color: rgb(4, 5, 5);
+    background-color: rgb(241, 171, 105);
+    opacity: .9;
+}
+
+#false:hover {
+    opacity: 1;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+#reset {
+    padding: 10px;
+    margin: 10px;
+    font-size: 22px;
+    opacity: .9;  
+}
+
+#reset:hover {
+    opacity: 1;
+    font-size: 24px;
+    transition: .3s;
+}
+
+.footer {
+    padding: 6px 0;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: rgb(51, 51, 51);
+}
+
+.footer,
+.push {
+    height: 40px;
+}
