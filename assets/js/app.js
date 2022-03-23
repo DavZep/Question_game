@@ -34,16 +34,14 @@ function gameOver() {
 
 function reset() {
     currentQ = 1;
-    score = [];
+    score = 0;
     showGameQuestion()
-    console.log(score)
 }
 
 document.addEventListener("click", function (event) {
     if (event.target.className === "btn trueFalseBtn") {
         alertMessage.classList.remove("alert-success", "alert-danger");
         alertMessage.textContent = "";
-        console.log(score)
 
         if (parseInt(currentQ) === 10) {
             gameOver();
@@ -53,6 +51,8 @@ document.addEventListener("click", function (event) {
                 score++;
                 alertMessage.classList.add("alert-success");
                 alertMessage.textContent = "Thats Correct!"
+                console.log(score)
+
             }
             else {
                 alertMessage.classList.add("alert-danger");
@@ -70,3 +70,4 @@ document.addEventListener("click", function (event) {
     
     }
 });
+console.log(score);
